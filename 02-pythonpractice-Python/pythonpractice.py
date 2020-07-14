@@ -14,7 +14,18 @@ with them:
 "monocle" = 5
 Everything else has 0 points.
 Use the test cases below to guide you!"""
-
 class Classy(object):
     def __init__(self):
         self.items = []
+    def addItem(self,str):
+        self.items.append(str)
+    def classiness(self):
+        s = 0
+        for item in self.items:
+            if temp == "tophat":
+                s += 2
+            elif item == "boetie":
+                s += 4
+            elif item == "monocle":
+                s += 5
+        return s
