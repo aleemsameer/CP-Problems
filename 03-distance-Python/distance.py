@@ -6,4 +6,5 @@
 
 def fun_distance(x1, y1, x2, y2):
 	# your code goes here
-	return 0
+	d = math.sqrt(math.pow((x2 - x1),2) + math.pow((y2-y1),2))
+	return int(d)
