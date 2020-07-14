@@ -6,5 +6,15 @@
 # Hint: You might find // and % useful here, and also getKthDigit().
 
 def handtodice(hand):
+	items = []
+	digits = []
+	while hand > 0:
+		reminder = hand % 10
+		items.append(reminder)
+		hand = hand//10
+	print(items)
+	for i in reversed(items):
+		digits.append(i)
+	result = tuple(digits)
+	return result
 	# your code goes here
-	pass
