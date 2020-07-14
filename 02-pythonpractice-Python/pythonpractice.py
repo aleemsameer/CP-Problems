@@ -22,9 +22,9 @@ class Classy(object):
     def classiness(self):
         s = 0
         for item in self.items:
-            if temp == "tophat":
+            if item == "tophat":
                 s += 2
-            elif item == "boetie":
+            elif item == "bowtie":
                 s += 4
             elif item == "monocle":
                 s += 5
