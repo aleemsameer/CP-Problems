@@ -9,4 +9,10 @@
 
 
 def fun_pascaltrianglevalue(row, col):
-	return 1
+	if row < col:
+		return 0
+	elif col == 0 or row ==0:
+		return 1
+	num = factorial(row)
+	denom = factorial(col) * factorial(roe - col)
+	return num // denom
