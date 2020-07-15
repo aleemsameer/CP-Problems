@@ -15,4 +15,4 @@ def fun_pascaltrianglevalue(row, col):
 		return 1
 	num = factorial(row)
 	d = factorial(col) * factorial(row - col)
-	return num // d
+	return num//d
