@@ -36,13 +36,12 @@ def sortUSA():
     cities.sort()
     return cities
 def alphaAsia():
-    countries = locations.get('Asia')
-    cities =[]
-    for i in countries.keys():
-        for j in countries.get(i):
-            cities.append(j + "-" + i)
-    cities.sort()
-    return cities
+    c = locations.get('Asia')
+    ci =[]
+    for i in c.keys():
+        for j in c.get(i):
+            ci.append(j + "-" + i)
+    ci.sort()
+    return ci
 
 
-    
