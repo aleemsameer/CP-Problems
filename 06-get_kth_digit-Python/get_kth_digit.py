@@ -9,5 +9,5 @@ def fun_get_kth_digit(digit, k):
 	number = str(digit)
 	if k >= len(number):
 		return 0
-	digit = number[len(nukmber) - 1 - k]
+	digit = number[len(number) - 1 - k]
 	return int(digit)
