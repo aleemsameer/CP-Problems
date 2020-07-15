@@ -7,5 +7,20 @@
 
 
 def fun_set_kth_digit(n, k, d):
-		return 0
+		flag = False
+		if n <0:
+			flag = True
+			n = n* -1
+		n = str(n)
+		length = len(n)
+		if k > length:
+			return 0
+		elif k == length:
+			n = str(d) + n[length - k :]
+		else:
+			n = n[:length -1-k] + std(d)+ n[length -k :]
+		if flag:
+			return int(n) * - 1
+		else:
+			return int(n)
 
