@@ -31,3 +31,15 @@ Asian City - Country
 Asian City - Country"""
 
 locations = {'North America': {'USA': ['Mountain View']}}
+def sortUSa():
+    cities = locations.get('North America').get('USA')
+    cities.sort()
+    return cities
+def aplhaAsia():
+    countreies = location.get('Asia')
+    cities =[]
+    for i in countries.keys():
+        for j in coutries.get(i):
+            cities.append(i + "-" + j)
+    cities.sort()
+    return cities
