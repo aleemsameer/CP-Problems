@@ -8,5 +8,9 @@
 # Another hint: This can be written using just one or two lines of Python.
 
 def largestperfectsquare(n):
-	# your code goes here
-	pass
+	value = math.sqrt(n) % 1
+	number = int(math.sqrt(n))
+	if value == 0:
+		return number
+	else:
+		return math.pow(num,2)
