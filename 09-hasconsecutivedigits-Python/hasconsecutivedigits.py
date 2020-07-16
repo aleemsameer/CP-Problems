@@ -4,4 +4,9 @@
 
 def hasconsecutivedigits(n):
 	n = abs(n)
-	
+	while n >0:
+		reminder = n%10
+		n //= 10
+		if rem == n%10:
+			return True 
+	return False
