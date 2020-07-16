@@ -11,4 +11,4 @@
 def gcd(m, n):
 	if m == 0:
 		return n
-	return gcd(n%n,m)
+	return gcd(n%m,m)
