@@ -12,4 +12,23 @@
 
 
 def fun_nth_happy_number(n):
-	return 0
+	res = 0
+	flag = 0
+	while flag <=n:
+		res+=1
+		if(ishappynumber(res)):
+			flag += 1
+	return res
+def ishappynumber(a):
+	if a == 7 or a == 1:
+		return True
+	sum = a
+	while sum > 9:
+		sum = 0
+		while a>0:
+			sum += (a%10)**2
+			a //= 10
+		if sum == 1:
+			return True
+		a = sum
+	return False 
