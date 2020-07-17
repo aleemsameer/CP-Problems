@@ -11,7 +11,24 @@
 
 
 def fun_applycaesarcipher(msg, shift):
-	return ""
+	text = ""
+	letters = 'abcdefghijklmnopqrstuvwxyz'
+	for m in msg :
+		if m not in m.isalpha():
+			text += m
+		else:
+			position = letters.index(m.lower())
+			newP = position + shift
+			if newp < 0:
+				newp +=26
+			elif newp > 25:
+				newp -= 26
+			if m.lower():
+				text += letters[newp]
+			elif m.isupper():
+				text += letters[newp].upper()
+	return text 
+
 
 
 
